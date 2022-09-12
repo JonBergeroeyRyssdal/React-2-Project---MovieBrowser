@@ -14,12 +14,12 @@ const MovieCard = ({ movie }) => {
 
   function RenderPoster() {
     if (movie.poster_path == null) {
-      return <img src={noImage} className="card-img-top" alt={movie.noImage} />;
+      return <img src={noImage} className="card-img-top h-75" alt={movie.noImage} />;
     } else {
       return (
         <img
           src={posterUrl}
-          className="card-img-top"
+          className="card-img-top h-75"
           alt={movie.original_title}
         />
       );
@@ -27,13 +27,13 @@ const MovieCard = ({ movie }) => {
   }
 
   return (
-    <div className="col-lg-3 col-md-3 col-2 my-4 ">
-      <div className="card h-100">
+    <div className="col-lg-3 col-md-3 col-2 my-4">
+      <div className="card d-flex h-100 pb-2" >
         <RenderPoster />
-        <div className="card-body">
-          <h5 className="card-title">{movie.original_title}</h5>
+        <div className="card-body h-25">
+          <h5 className="card-title h-50">{movie.original_title}</h5>
 
-          <Link to={detailUrl} className="btn btn-primary">
+          <Link to={detailUrl} className="btn btn-primary ">
             Show details
           </Link>
         </div>
