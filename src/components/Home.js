@@ -3,15 +3,12 @@ import Hero from "./Hero";
 const Home = () => {
   return (
     <>
-      <Hero text="Welcome to react" />
+      <Hero text="Welcome to Movie Browser made with React" />
       <div className="container">
         <div className="row">
           <div className="col-lg-8 offset-lg-2 my-5">
             <p className="lead">
-              done - make an 404 page <hr></hr>
-              done - search result doesnt have an image <hr></hr>
-              done - there is no handler if there are no search results <hr></hr>
-              done - the search button in the navigation doesnt work
+              Search for movies in the navbar. The page is API driven. 
             </p>
           </div>
         </div>
